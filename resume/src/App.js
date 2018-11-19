@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import "./App.css";
+import resume from "./resume.json";
 
 class App extends Component {
   render() {
+    console.log(resume);
     return (
       <div className="wrapper">
         <div className="sidebar-wrapper">
           <div className="profile-container">
-            <img className="profile" src="assets/images/profile.png" alt="" />
-            <h1 className="name">Alan Doe</h1>
+            <img className="profile" src={resume.image} alt="" />
+            <h1 className="name">{resume.name}</h1>
             <h3 className="tagline">Full Stack Developer</h3>
           </div>
 

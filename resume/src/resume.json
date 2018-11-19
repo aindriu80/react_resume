@@ -1,0 +1,105 @@
+{
+  "name": "Aindriu Mac Giolla Eoin",
+  "email": "someone@awesome.me",
+  "phone": "123-546-7890",
+  "image": "https://media.licdn.com/dms/image/C4E03AQG46XJw54Vwkg/profile-displayphoto-shrink_100_100/0?e=1548288000&v=beta&t=QPAFztFsbxUFR2yYH22w3PEkes0371tEmPPckIXbV3A",
+  "website": "programmingbuddy.club",
+  "twitter": "@abhaytalreja",
+  "twitterURL": "https://twitter.com/aindriu80",
+  "experiences": [
+    {
+      "title": "Lead Developer",
+      "period": "2015 - Present",
+      "company": "Startup Hubs, San Francisco",
+      "companyURL": "http://programmingbuddy.club",
+      "details": "Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo."
+    },
+    {
+      "title": "Senior Software Engineer",
+      "period": "2014 - 2015",
+      "company": "Google, London",
+      "companyURL": "http://programmingbuddy.club",
+      "details": "Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Velocity",
+      "url": "http://programmingbuddy.club",
+      "detail": "A responsive website template designed to help startups promote, market and sell their products."
+    },
+    {
+      "name": "DevStudio",
+      "url": "http://programmingbuddy.club",
+      "detail": "A responsive website template designed to help startups promote, market and sell their products."
+    },
+    {
+      "name": "Tempo",
+      "url": "http://programmingbuddy.club",
+      "detail": "A responsive website template designed to help startups promote, market and sell their products."
+    },
+    {
+      "name": "Atom",
+      "url": "http://programmingbuddy.club",
+      "detail": "A responsive website template designed to help startups promote, market and sell their products."
+    },
+    {
+      "name": "Delta",
+      "url": "http://programmingbuddy.club",
+      "detail": "A responsive website template designed to help startups promote, market and sell their products."
+    }
+  ],
+  "skills": [
+    {
+      "name": "C#",
+      "percent": "98%"
+    },
+    {
+      "name": "Javascript & jQuery",
+      "percent": "90%"
+    },
+    {
+      "name": "Angular",
+      "percent": "80%"
+    },
+    {
+      "name": "HTML5 & CSS",
+      "percent": "99%"
+    },
+    {
+      "name": "Python",
+      "percent": "70%"
+    },
+    {
+      "name": "React",
+      "percent": "85%"
+    }
+  ],
+  "education": [
+    {
+      "degree": "BSc in Computer Science",
+      "university": "Queens University",
+      "period": "2001 - 2004"
+    },
+    {
+      "HND": "HND in Computer Science",
+      "university": "Fermanagh College",
+      "period": "1999 - 2001"
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "details": "Native"
+    },
+    {
+      "name": "French",
+      "details": "Professional"
+    },
+    {
+      "name": "Italian",
+      "details": "Professional"
+    }
+  ],
+  "interests": ["Climbing", "Cycling", "Cooking", "Coding"]
+}
