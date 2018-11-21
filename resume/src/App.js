@@ -2,11 +2,36 @@ import React, { Component } from "react";
 import "./App.css";
 import resume from "./resume.json";
 import Experience from "./Experience";
+import Project from "./Project";
+import Skill from "./Skill";
+import Education from "./Education";
+
 class App extends Component {
   renderExperiences() {
     let resultsArray = [];
     resume.experiences.map((item, i) => {
       resultsArray.push(<Experience item={item} key={i} />);
+    });
+    return resultsArray;
+  }
+  renderProjects() {
+    let resultsArray = [];
+    resume.projects.map((item, i) => {
+      resultsArray.push(<Project item={item} key={i} />);
+    });
+    return resultsArray;
+  }
+  renderSkills() {
+    let resultsArray = [];
+    resume.skills.map((item, i) => {
+      resultsArray.push(<Project item={item} key={i} />);
+    });
+    return resultsArray;
+  }
+  renderEducation() {
+    let resultsArray = [];
+    resume.education.map((item, i) => {
+      resultsArray.push(<Education item={item} key={i} />);
     });
     return resultsArray;
   }
@@ -61,19 +86,8 @@ class App extends Component {
 
           <div className="education-container container-block">
             <h2 className="container-block-title">Education</h2>
-            <div className="item">
-              <h4 className="degree">MSc in Computer Science</h4>
-              <h5 className="meta">University of London</h5>
-              <div className="time">2011 - 2012</div>
-            </div>
-
-            <div className="item">
-              <h4 className="degree">BSc in Applied Mathematics</h4>
-              <h5 className="meta">Bristol University</h5>
-              <div className="time">2007 - 2011</div>
-            </div>
+            {this.renderEducation()}
           </div>
-
           <div className="languages-container container-block">
             <h2 className="container-block-title">Languages</h2>
             <ul className="list-unstyled interests-list">
@@ -142,6 +156,7 @@ class App extends Component {
               </span>
               Projects
             </h2>
+
             <div className="intro">
               <p>
                 You can list your side projects or open source libraries in this
@@ -150,81 +165,7 @@ class App extends Component {
                 lectus.
               </p>
             </div>
-
-            <div className="item">
-              <span className="project-title">
-                <a href="#hook">Velocity</a>
-              </span>{" "}
-              -
-              <span className="project-tagline">
-                A responsive website template designed to help startups promote,
-                market and sell their products.
-              </span>
-            </div>
-
-            <div className="item">
-              <span className="project-title">
-                <a
-                  href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/"
-                  target="_blank"
-                >
-                  DevStudio
-                </a>
-              </span>
-              -
-              <span className="project-tagline">
-                A responsive website template designed to help web
-                developers/designers market their services.
-              </span>
-            </div>
-
-            <div className="item">
-              <span className="project-title">
-                <a
-                  href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-startups-tempo/"
-                  target="_blank"
-                >
-                  Tempo
-                </a>
-              </span>
-              -
-              <span className="project-tagline">
-                A responsive website template designed to help startups promote
-                their products or services and to attract users &amp; investors
-              </span>
-            </div>
-
-            <div className="item">
-              <span className="project-title">
-                <a
-                  href="hhttp://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/"
-                  target="_blank"
-                >
-                  Atom
-                </a>
-              </span>
-              -
-              <span className="project-tagline">
-                A comprehensive website template solution for
-                startups/developers to market their mobile apps.
-              </span>
-            </div>
-
-            <div className="item">
-              <span className="project-title">
-                <a
-                  href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/"
-                  target="_blank"
-                >
-                  Delta
-                </a>
-              </span>
-              -
-              <span className="project-tagline">
-                A responsive Bootstrap one page theme designed to help app
-                developers promote their mobile apps
-              </span>
-            </div>
+            {this.renderProjects()}
           </section>
 
           <section className="skills-section section">
@@ -234,91 +175,7 @@ class App extends Component {
               </span>
               Skills &amp; Proficiency
             </h2>
-            <div className="skillset">
-              <div className="item">
-                <h3 className="level-title">Python &amp; Django</h3>
-                <div className="progress level-bar">
-                  <div
-                    className="progress-bar theme-progress-bar"
-                    role="progressbar"
-                    styles="width: 99%"
-                    aria-valuenow="99"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  />
-                </div>
-              </div>
-
-              <div className="item">
-                <h3 className="level-title">Javascript &amp; jQuery</h3>
-                <div className="progress level-bar">
-                  <div
-                    className="progress-bar theme-progress-bar"
-                    role="progressbar"
-                    styles="width: 98%"
-                    aria-valuenow="98"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  />
-                </div>
-              </div>
-
-              <div className="item">
-                <h3 className="level-title">Angular</h3>
-                <div className="progress level-bar">
-                  <div
-                    className="progress-bar theme-progress-bar"
-                    role="progressbar"
-                    styles="width: 98%"
-                    aria-valuenow="98"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  />
-                </div>
-              </div>
-
-              <div className="item">
-                <h3 className="level-title">HTML5 &amp; CSS</h3>
-                <div className="progress level-bar">
-                  <div
-                    className="progress-bar theme-progress-bar"
-                    role="progressbar"
-                    styles="width: 95%"
-                    aria-valuenow="95"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  />
-                </div>
-              </div>
-
-              <div className="item">
-                <h3 className="level-title">Ruby on Rails</h3>
-                <div className="progress level-bar">
-                  <div
-                    className="progress-bar theme-progress-bar"
-                    role="progressbar"
-                    styles="width: 85%"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  />
-                </div>
-              </div>
-
-              <div className="item">
-                <h3 className="level-title">Sketch &amp; Photoshop</h3>
-                <div className="progress level-bar">
-                  <div
-                    className="progress-bar theme-progress-bar"
-                    role="progressbar"
-                    styles="width: 60%"
-                    aria-valuenow="60"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  />
-                </div>
-              </div>
-            </div>
+            <div className="skillset">{this.renderSkills()}</div>
           </section>
         </div>
       </div>
