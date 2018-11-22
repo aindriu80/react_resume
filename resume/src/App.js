@@ -5,6 +5,7 @@ import Experience from "./Experience";
 import Project from "./Project";
 import Skill from "./Skill";
 import Education from "./Education";
+import Language from "./Language";
 
 class App extends Component {
   renderExperiences() {
@@ -24,7 +25,7 @@ class App extends Component {
   renderSkills() {
     let resultsArray = [];
     resume.skills.map((item, i) => {
-      resultsArray.push(<Project item={item} key={i} />);
+      resultsArray.push(<Skill item={item} key={i} />);
     });
     return resultsArray;
   }
@@ -32,6 +33,14 @@ class App extends Component {
     let resultsArray = [];
     resume.education.map((item, i) => {
       resultsArray.push(<Education item={item} key={i} />);
+    });
+    return resultsArray;
+  }
+
+  renderLanguages() {
+    let resultsArray = [];
+    resume.languages.map((item, i) => {
+      resultsArray.push(<Language item={item} key={i} />);
     });
     return resultsArray;
   }
@@ -91,15 +100,7 @@ class App extends Component {
           <div className="languages-container container-block">
             <h2 className="container-block-title">Languages</h2>
             <ul className="list-unstyled interests-list">
-              <li>
-                English <span className="lang-desc">(Native)</span>
-              </li>
-              <li>
-                French <span className="lang-desc">(Professional)</span>
-              </li>
-              <li>
-                Spanish <span className="lang-desc">(Professional)</span>
-              </li>
+              {this.renderLanguages()}
             </ul>
           </div>
 

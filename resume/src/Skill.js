@@ -9,10 +9,6 @@ class Skill extends Component {
           <div
             className="progress-bar theme-progress-bar"
             role="progressbar"
-            style="width: 99%"
-            aria-valuenow="99"
-            aria-valuemin="0"
-            aria-valuemax="100"
             data-level={this.props.item.percent}
           />
         </div>
