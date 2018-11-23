@@ -45,6 +45,14 @@ class App extends Component {
     return resultsArray;
   }
 
+  renderInterests() {
+    let resultsArray = [];
+    resume.interests.map((item, i) => {
+      resultsArray.push(<li key={i}>{item}</li>);
+    });
+    return resultsArray;
+  }
+
   render() {
     console.log(resume);
     return (
@@ -107,9 +115,7 @@ class App extends Component {
           <div className="interests-container container-block">
             <h2 className="container-block-title">Interests</h2>
             <ul className="list-unstyled interests-list">
-              <li>Climbing</li>
-              <li>Snowboarding</li>
-              <li>Cooking</li>
+              {this.renderInterests()}
             </ul>
           </div>
         </div>
